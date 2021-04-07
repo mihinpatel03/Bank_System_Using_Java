@@ -122,7 +122,8 @@ public class Account {
 	public void setUpi(String upi) {
 		this.upi = upi;
 	}
-
+	
+	//toString method
 	@Override
 	public String toString() {
 		return "Account [accNo=" + accNo + ", name=" + name + ", contact=" + contact + ", email=" + email + ", city="

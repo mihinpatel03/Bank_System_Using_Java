@@ -1,3 +1,4 @@
+//Main File
 package banking_system;
 
 
@@ -9,12 +10,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Bank {
-
+	
+	//Main method
 	public static void main(String[] args) {
 		try {
 			Scanner sc = new Scanner(System.in);
 			ArrayList<Account> accountList = new ArrayList<>();
 			
+			//Create objects of file to write and print
 			FileWriter user = new FileWriter("D:\\userFile.txt", true);
 			PrintWriter userPW = new PrintWriter(user);
 			
@@ -80,6 +83,7 @@ public class Bank {
 		
 	}
 	
+	//FillData method to get all the required data
 	public static void fillData(ArrayList<Account> accountList, Scanner sc, PrintWriter userPW, BufferedReader userBR) {
 		try {
 			
@@ -238,6 +242,7 @@ public class Bank {
 		}
 	}
 	
+	//editAccountDetails method to edit the account details
 	public static void editAccountDetails(ArrayList<Account> accountList, Scanner sc, PrintWriter userPW, BufferedReader userBR) {
 		try {
 
@@ -357,6 +362,7 @@ public class Bank {
 		}
 	}
 	
+	//performOperations function to perform various operations
 	public static void performOperations(ArrayList<Account> accountList, Scanner sc) {
 		// loop to continue until the user wants to select the different options from user menu
 		int count = 0;
@@ -673,6 +679,7 @@ public class Bank {
 		}
 	}
 	
+	//generate six digits random number
 	public static String getRandomNumberString() {
 	    Random random = new Random();
 	    int number = random.nextInt(999999);
@@ -681,6 +688,7 @@ public class Bank {
 	    return String.format("%06d", number);
 	}
 	
+	//update details in the file
 	public static void updateDetails(int lineNumber, String data) {
 		try {
 		    Path path = Paths.get("D:\\userFile.txt");

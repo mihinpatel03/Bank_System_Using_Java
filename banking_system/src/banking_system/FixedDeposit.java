@@ -6,6 +6,7 @@ public class FixedDeposit extends Account{
 	protected double amountToDeposit;
 	protected int durationInMonth;
 	
+	//conscructor
 	public FixedDeposit(int accNo, String name, long contact, String email, String city, int pincode, double amountToDeposit, int durationInMonth) {
 		super(accNo, name, contact, email, city, pincode);
 		this.accType = "Fixed Deposit";
@@ -26,6 +27,7 @@ public class FixedDeposit extends Account{
 		this.balance = balance;
 	}
 
+	//getter setter methods
 	public String getAccType() {
 		return accType;
 	}
@@ -58,7 +60,7 @@ public class FixedDeposit extends Account{
 		this.durationInMonth = durationInMonth;
 	}
 
-	
+	//toString method
 	@Override
 	public String toString() {
 		return "Fixed Deposit [accNo=" + accNo + ", name=" + name +", contact=" + contact + ", email=" + email +
@@ -66,7 +68,8 @@ public class FixedDeposit extends Account{
 				", ifsc=" + ifsc + ", upi=" + upi +", accType=" + accType + ", accNo_accType=" + accNo_accType + ", amountToDeposit="
 				+ amountToDeposit + ", durationInMonth=" + durationInMonth + "]";
 	}
-
+	
+	// defining the method to display available balance 
 	public double displayBalance() {
 		System.out.println("\nBalance for this Fixed Deposit account: " +balance);
 		return balance;

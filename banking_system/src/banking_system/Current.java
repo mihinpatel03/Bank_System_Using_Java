@@ -28,7 +28,8 @@ public class Current extends Saving {
 		this.minAmount = 3000.0;
 		this.upi = name + "@okcurrent";
 	}
-
+	
+	//getter setter methods
 	public String getPanCardNo() {
 		return panCardNo;
 	}
@@ -36,7 +37,9 @@ public class Current extends Saving {
 	public void setPanCardNo(String panCardNo) {
 		this.panCardNo = panCardNo;
 	}
-
+	
+	
+	//toString method
 	@Override
 	public String toString() {
 		return "Current [accNo=" + accNo + ", name=" + name + ", contact=" + contact + ", email=" + email + ", city=" + city

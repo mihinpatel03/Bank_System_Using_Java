@@ -76,6 +76,7 @@ public class Saving extends Account {
 		this.minAmount = minAmount;
 	}
 
+	//toString method
 	@Override
 	public String toString() {
 		return "Saving [accNo=" + accNo + ", name=" + name + ", contact=" + contact + ", email=" + email + ", city=" + city

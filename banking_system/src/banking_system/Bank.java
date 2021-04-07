@@ -337,6 +337,7 @@ public class Bank {
 			 * System.out.println("Pincode: "+account.pincode);
 			 * System.out.println("IFSC: "+account.ifsc);
 			 * 
+			 *
 			 * if (account instanceof Current){ // type checking
 			 * System.out.println("Account type: "+((Current) account).accType);
 			 * System.out.println("PAN Card numner: "+((Current) account).getPanCardNo());

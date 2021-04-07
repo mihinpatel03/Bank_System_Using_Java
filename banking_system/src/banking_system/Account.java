@@ -1,6 +1,6 @@
 package banking_system;
 
-// abstract Account class that will become super class for all other account type classes
+// Account class that will become super class for all other account type classes
 public class Account {
 	
 	// declaring variable using protected access modifier
@@ -132,7 +132,7 @@ public class Account {
 	}
 	
 	
-	// all the abstract methods that will be defined in child classes
+	// all the methods that will be defined in child classes
 	public double displayBalance() {
 		System.out.println("This method will display the balance of the account");
 		return 0;
